@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Shopping cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layout-box">
+            <div class="mini-shop">
+                <h1 class="shop-heading">Mini tech-shop</h1>
+                <div class="item item-1">
+                    <div>
+                        <img src="/img/joystick.png" alt="joystick">
+                        <div class="item-description">
+                            <h2>Joystick</h2>
+                            <p class="item-price">$10</p>
+                        </div>
+                    </div>
+                    <section class="item-buy">
+                        <input value="0" min="0" type="number" class="item-num">
+                        <button onclick="addToCart(this)" class="item-count-btn">Add to cart</button>
+                    </section>
+                </div>
+                <div class="item item-2">
+                    <div>
+                        <img src="/img/laptop.png" alt="laptop">
+                        <div class="item-description">
+                            <h2>Laptop</h2>
+                            <p class="item-price">$550</p>
+                        </div>
+                    </div>
+                    <section class="item-buy">
+                        <input value="0" min="0" type="number" class="item-num">
+                        <button onclick="addToCart(this)" class="item-count-btn">Add to cart</button>
+                    </section>
+                </div>
+                <div class="item item-3">
+                    <div>
+                        <img src="/img/mouse.png" alt="mouse">
+                        <div class="item-description">
+                            <h2>Mouse</h2>
+                            <p class="item-price">$5</p>
+                        </div>
+                    </div>
+                    <section class="item-buy">
+                        <input value="0" min="0" type="number" class="item-num">
+                        <button onclick="addToCart(this)" class="item-count-btn">Add to cart</button>
+                    </section>
+                </div>
+            </div>
+            <div class="cart">
+                <img src="/img/cart.png" class="cart-img">
+                <h1>Shopping cart</h1>
+                <div class="cart-items">
+                    <ul class="cart-list">
+
+                    </ul>
+                </div>           
+                <h2 class="shopping-cart-total">Total<span class="total"></span></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
